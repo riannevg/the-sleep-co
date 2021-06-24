@@ -4,3 +4,36 @@
     box-sizing: border-box;
 }
 
+/********************* THESE ARE TEMPORARY STYLES, THESE HAVE TO BE DELETED******************** */
+*{
+    padding:0.5rem;
+    border: 2px solid rgb(210,210,210)
+}
+
+body{
+    border:none;
+}
+
+html{
+    border:none;
+}
+
+/******************************************** Image styles */
+
+.bg-image{
+    background-image:url('/images/the-sleep-co-1.jpg');
+    background-size:cover;
+    min-height:10rem;
+}
+
+
+
+/***************** THESE ARE THE UNIVERSAL STYLES AND UTILITY CLASSES **************/
+
+.padded     {padding:5%;}
+.padded-sm  {padding:1rem;}
+
+.bg-dark{
+    background-color:#192B37;
+    color:white;
+}
