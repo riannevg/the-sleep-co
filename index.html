@@ -6,11 +6,17 @@
 <head>
     <title>The Sleep Co</title>
 
+    
     <!-- This is the gridlex link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
     <!-- This is the font awesome icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- This is the Google Font CATAMARAN 200, 400, 500, 800 WEIGHTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
 
     <!-- Link to CSS style sheet -->
     <link rel="stylesheet" href="style.css">
@@ -20,28 +26,29 @@
 <body>
 
     <!------------------------------ THIS IS THE HEADER BANNER------------------ -->
-    <header class='padded grid'>
+    <header class='padded grid text-center tall-100'>
         <div class='col-12-middle'>
-            <h2>Sleep like a baby</h2>
-            <h1>the ultimate mattress solution</h1>
+            <h3><span class='feature-text'>sleep</span> like a baby</h3>
+            <h1 class='font-weight-400'>the ultimate mattress solution</h1>
         </div>
     </header>
    
     <!------------------------------ THIS IS THE GALLERY AND ABOUT SECTION------------------ -->
     <section class="grid">
-        <div class="col-6 padded">
-            <h2>build to last a lifetime</h2>
+        <div class="col-6-middle padded">
+            <h2>build to last a <span class='feature-text'>lifetime</span></h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ab ipsa natus autem excepturi quia architecto quisquam, dolore maxime iure harum laborum, praesentium temporibus magni commodi fugiat adipisci. Harum, dicta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, harum porro corporis voluptatibus assumenda est nesciunt a voluptatum at consequuntur, ullam incidunt aspernatur facere. Earum corporis aliquid fugit quam vel.</p>
         </div>
        
-        <div class="bg-image col-6">
+        <div class="bg-image bg-bed col-6 tall-70">
             <!-- background image bed -->
         </div>
-        <div class="bg-image col-6">
+        <div class="bg-image bg-dog col-6 tall-70">
             <!-- background image pug sleeping -->
         </div>
-        <div class="padded col-6">
-            <h2>so soft you'll melt</h2>
+        <div class="padded col-6-middle">
+            <h2>so <span class='feature-text'>soft</span> you'll melt</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ab ipsa natus autem excepturi quia architecto quisquam, dolore maxime iure harum laborum, praesentium temporibus magni commodi fugiat adipisci. Harum, dicta.</p>
         </div>
 
@@ -49,8 +56,8 @@
 
 <!------------------------------ THIS IS THE FEATURES SECTION------------------ -->
 <section class='padded grid bg-dark'>
-    <div class='padded-sm col-12'>
-        <h2>features you will love</h2>
+    <div class='padded-sm col-12 text-center'>
+        <h2><span class='feature-text'>features</span> you will love</h2>
     </div>
     <div class='padded-sm col-3'>
         <i class="fas fa-cloud"></i>
@@ -72,36 +79,42 @@
 
 <!------------------------------ THIS IS THE BANNER SECTION------------------ -->
 
-<section class='padded'> 
-    <h3>never underestimate the power of a good night sleep</h3>
+<section class='padded text-center bg-image bg-pillow tall-70 grid'> 
+    <div class='col-12-middle'>
+        <h3>
+            <span class='small-text font-weight-400'>never underestimate the power of </span>
+            <br><span class='big-text'>a good night <span class='white-text'>sleep</span></span>
+        </h3>
+    </div>
 </section>
 
 <!------------------------------ THIS IS THE QUOTE SECTION------------------ -->
-<section class="grid">
-    <div class='col-1'>
-        <span>"</span>
+<section class="grid padded-lg">
+    <div class='col-1 text-right'>
+        <span class='quotes'>&ldquo;</span>
     </div>
-    <div class='col-10'>
-        <p>I've never experienced sleep like this. OMG I really love this mattress I want to buy one for every member of my family</p>
-        <p>- A very happy customer</p>
+    <div class='col-10-middle text-center'>
+        <p class='medium-text font-weight-200'>I've never experienced sleep like this. OMG I really love this mattress I want to buy one for every member of my family</p>
+        <p class='subtitle'>- A very happy customer</p>
     </div>
-    <div class='col-1'> 
-        <span>"</span>
+    <div class='col-1 text-left'> 
+        <span class='quotes'>&rdquo;
+        </span>
     </div>
 </section>
 
 <!------------------------------ THIS IS THE FOOTER SECTION------------------ -->
 
-<footer class='grid-spaceBetween bg-dark'>
-    <div class='col-4'>
-        <h2>Let's connect</h2>
+<footer class='grid-spaceBetween bg-dark padded'>
+    <div class='col-4-bottom'>
+        <h2>Let's <br><span class='feature-text'>connect</span></h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum voluptatibus, exercitationem odio quia asperiores animi doloremque perspiciatis, corporis sunt impedit ex laboriosam consectetur officiis, similique facere itaque porro minus veritatis.</p>
     </div>
-    <div class='col-6'>
-        <p>all: 04555 5555</p>
-        <p>email: hello@thesleep.co</p>
-        <p>Store:55 Main St, Chicago</p>
-        <p>Instagram: @thesleepco</p>
+    <div class='col-6-bottom'>
+        <p><strong>Call</strong>: <a href='tel:#'>04555 5555</a></p>
+        <p><strong>Email</strong>: <a href ='mailto:#'>hello@thesleep.co</a></p>
+        <p><strong>Store</strong> :55 Main St, Chicago</p>
+        <p><strong>Instagram</strong>: <a href='https://www.instagram.com/thesleepco'>@thesleepco</a></p>
     </div>
 </footer>
 
