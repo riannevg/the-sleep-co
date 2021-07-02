@@ -69,6 +69,7 @@ body{
 
 
 
+
 h2{
     font-size:2.5rem;
     line-height:1.1;
@@ -104,6 +105,16 @@ header{
     background-image:url('/images/the-sleep-co-1.jpg');
     background-size:cover;
     background-position:center;
+}
+
+
+.nav-header a{
+    border:none;
+    font-size:1.2rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-weight:normal;
+    text-transform:uppercase;
 }
 
 header h3{
