@@ -125,7 +125,7 @@ header{
     background-image:url('/images/the-sleep-co-1.jpg');
     background-size:cover;
     background-position:center;
-    
+
 }
 
 
@@ -181,4 +181,27 @@ footer a{border:none;}
 /* Buttons and forms */
 input, textarea{
     width:100%;
+    margin-bottom:0.3rem;
+    padding:0.5rem;
+    font-family:inherit;
+    font-size:0.9rem;
+    border:2 px solid transparent;
+}
+
+input:focus,
+textarea:focus{
+    border:2px solid #FFBE00;
+    outline:none;
+}
+
+.button{
+    padding:0.5rem 2rem;
+    background-color:#FFBE00;
+    appearance: none;
+    border:2px solid #FFBE00;    
+    color:white;
+}
+
+.button:hover{
+    color:#192B37;
 }
