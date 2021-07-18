@@ -10,11 +10,12 @@
     margin:0;
 }
 
-/******************************************** Image styles */
+/******************************************** Image styles *************************************************/
 
 .bg-image{
     background-image:url('/images/the-sleep-co-1.jpg');
     background-size:cover;
+    background-repeat:no-repeat;
     min-height:10rem;
 }
 
@@ -22,13 +23,9 @@
 .portrait{padding-bottom:125%;}
 .square{padding-bottom:100%;}
 
-/***************** THESE ARE THE UNIVERSAL STYLES AND UTILITY CLASSES **************/
+/***************** THESE ARE THE UNIVERSAL STYLES AND UTILITY CLASSES ***************************************/
 
-body{
-    
-    font-family: 'Catamaran', sans-serif;
-    color: #192B37;
-}
+
 
 .padded     {padding:5%;}
 .padded-sm  {padding:1rem;}
@@ -39,13 +36,8 @@ body{
     color:white;
 }
 
-.bg-featured{
-    background-color:#FFBE00;
-    }
-
-.bg-light{
-    background-color:#E3ECF2;
-}
+.bg-featured{background-color:#FFBE00;}
+.bg-light{background-color:#E3ECF2;}
 
 
 .tall-50        {min-height:50vh;}
@@ -56,6 +48,15 @@ body{
 .tall-100       {min-height:100vh;}
 
 /* Typography styles */
+
+body{
+    
+    font-family: 'Catamaran', sans-serif;
+    color: #192B37;
+}
+
+
+
 h2, h3, h4, h5, h6 {
     margin-bottom:1rem;
     line-height:1.1;
@@ -94,13 +95,10 @@ h2, h3, h4, h5, h6 {
 
 h2{
     font-size:2.5rem;
-    line-height:1.1;
-    margin-bottom:1rem;
+   
 }
 
-h3{
-    line-height:1.1;
-}
+
 p{
     font-weight:200;
     line-height:1.5;
@@ -127,6 +125,7 @@ header{
     background-image:url('/images/the-sleep-co-1.jpg');
     background-size:cover;
     background-position:center;
+    
 }
 
 
@@ -175,4 +174,11 @@ footer a{border:none;}
     text-align:center;
     margin-bottom:2rem;
     font-size:3rem;
+}
+
+
+
+/* Buttons and forms */
+input, textarea{
+    width:100%;
 }
