@@ -205,3 +205,102 @@ textarea:focus{
 .button:hover{
     color:#192B37;
 }
+
+
+
+/* General CSS Responsive styles, apply everywhere, unless overwritten */
+
+.show-xs,
+.show-sm,
+.show-md{
+    display:none;
+}
+
+/******************** Media Queries **********************/
+
+/* Styles here will apply on MD devices 64EM / 1024px */
+
+@media(max-width:64em){
+
+    body{border:2px solid green;}
+
+
+    
+    .show-md{display:block;}
+    .hide-md{display:none;}
+
+    .md-tall-80{min-height: 80vh;}
+
+    .md-text-center{text-align: center;}
+    .md-text-left{text-align: left;}
+    .md-text-right{text-align: right;}
+
+
+    .md-header-text{margin-top:5rem;}
+
+    header h2{font-size:1.5rem;}
+
+    header h3{font-size:10vw;}
+
+
+}
+
+
+/* Styles here will apply on SM devices 48EM / 768px */
+
+@media(max-width:48em){
+
+    body{border:2px solid blueviolet;}
+
+
+    .show-sm{display:block;}
+    .hide-sm{display:none;}
+
+    .sm-text-center{text-align: center;}
+    .sm-text-left{text-align: left;}
+    .sm-text-right{text-align: right;}
+
+    .sm-padded{padding: 5%;}
+    .sm-padded-1{padding:1rem;}
+    .sm-padded-05{padding: 0.5rem;}
+
+    .sm-padded-t-0{padding-top: 0;}
+    .sm-padded-b-0{padding-bottom: 0;}
+    .sm-padded-l-0{padding-left: 0;}
+    .sm-padded-r-0{padding-right: 0;}
+
+    .sm-margin-t-0{margin-top: 0;}
+    .sm-margin-b-0{margin-bottom: 0;}
+
+    [class*="grid-"], [class*="grid_"], [class~="grid"]{
+        display:block;
+    }
+
+    .nav-header a {
+        font-size: 0.9rem;}
+
+
+
+}
+
+
+
+
+
+
+/* Styles here will apply on SM devices 36EM / 576px */
+
+@media(max-width:36em){
+
+
+    body{border:2px solid orange;}
+
+    .show-xs{display:block;}
+    .hide-xs{display:none;}
+
+
+    header h1{font-size:5vw;}
+
+
+
+}
