@@ -1,5 +1,15 @@
 ---
 layout: default
+products:
+  - title: Card 1
+    description: Chocolate I love lemon drops brownie bonbon chocolate dragée. Cotton candy gummies sweet halvah tart sweet. Bear claw danish I love soufflé jelly beans powder.
+    image: bg-bed
+  - title: Card 2
+    description: Muffin cupcake croissant cheesecake I love topping chocolate cake. Ice cream I love sesame snaps danish toffee I love jelly sesame snaps sesame snaps. Caramels cake I love apple pie.
+    image: bg-dog
+  - title: Card 3
+    description: Cake jujubes powder I love fruitcake danish gingerbread. Sesame snaps I love candy canes I love tootsie roll dessert. Tart tart oat cake oat cake candy caramels marshmallow gingerbread muffin.
+    image: bg-pillow
 ---
 
 
@@ -46,41 +56,22 @@ layout: default
 
 <!------------------------------ THIS IS THE CARDS SECTION ------------------ -->
 
-<section class='grid padded'>
-    <div class='col-4_xs-12 padded-sm'>
-        <div class='card'>
-            <div class='bg-image portrait'></div>
-            <div class='padded-sm'>
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
-            </div>
-        </div>
-    </div>
+<section class='grid-center padded'>
 
-
-
-    <div class='col-4_xs-12 padded-sm'>
-        <div class='card '>
-            <div class='bg-image portrait'></div>
-            <div class='padded-sm'>
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
-            </div>
-        </div>
-    </div>
-
-
-
+{% for item in page.products %}
 
     <div class='col-4_xs-12 padded-sm'>
         <div class='card'>
-            <div class='bg-image portrait'></div>
+            <div class='bg-image portrait {{item.image}}'></div>
             <div class='padded-sm'>
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}}</p>
             </div>
         </div>
     </div>
+
+    {% endfor %}
+
 </section>
 
 

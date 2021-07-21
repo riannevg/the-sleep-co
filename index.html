@@ -1,5 +1,14 @@
 ---
 layout: default
+featured:
+  - icon: fas fa-cloud editable
+    description: Cake muffin chocolate candy canes lemon drops. Jujubes toffee cotton candy chupa chups carrot cake icing. Pie candy jelly muffin sesame snaps chocolate bar.
+  - icon: fas fa-apple-alt
+    description: Cotton candy dessert cotton candy sweet tiramisu cheesecake pudding topping. Sweet roll brownie muffin pie fruitcake dessert. Cookie oat cake dragée donut topping. Caramels jujubes lollipop chocolate.
+  - icon: fas fa-fish
+    description: Chupa chups tootsie roll cake cupcake pastry soufflé chocolate danish. Apple pie fruitcake cake. Marzipan croissant chocolate croissant sesame snaps cake chupa chups lollipop topping.
+  - icon: fas fa-hamburger
+    description: Cupcake chupa chups marshmallow jujubes wafer chocolate bar topping. Sugar plum jelly cake cake marzipan. Pastry dessert pudding sesame snaps danish sweet jujubes topping.
 ---
 
 
@@ -39,26 +48,19 @@ layout: default
     </section>
 
 <!------------------------------ THIS IS THE FEATURES SECTION------------------ -->
-<section class='padded grid bg-dark'>
+<section class='padded grid-center bg-dark'>
     <div class='padded-sm col-12 text-center'>
         <h2><span class='feature-text'>features</span> you will love</h2>
     </div>
+
+{% for item in page:featured %}
+
     <div class='padded-sm col-3_sm-6'>
-        <i class="fas fa-cloud editable"></i>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
+        <i class="{{item.icon}}"></i>
+        <p>{{item.description}}</p>
     </div>
-    <div class='padded-sm col-3_sm-6'>
-        <i class="fas fa-cloud editable"></i>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
-    </div>
-    <div class='padded-sm col-3_sm-6'>
-        <i class="fas fa-cloud editable"></i>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
-    </div>
-    <div class='padded-sm col-3_sm-6'>
-        <i class="fas fa-cloud editable"></i>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et reiciendis ipsa laborum minima ducimus magni magnam provident autem a, maxime odio. Eos ullam culpa inventore aspernatur quidem, corrupti obcaecati!</p>
-    </div>
+{% endfor %}
+
 </section>
 
 <!------------------------------ THIS IS THE BANNER SECTION------------------ -->
