@@ -145,6 +145,42 @@ header h3{
 
 footer a{border:none;}
 
+
+/* Mobile Menu styles */
+
+.mobile-menu{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:50%;
+    right:0;
+}
+
+.mobile-menu a{
+    display:block;
+    font-size:1.2rem;
+    padding:0.5rem;
+    text-decoration:none;
+    border-bottom:2px solid #FFBE00;
+    }
+
+
+.mobile-menu a:hover{
+    color:black;
+    border-bottom:2px solid black;
+}
+.hamburger-button i{
+    font-size:2rem;
+}
+
+.hamburger-button{
+    position:relative;
+    z-index:2;
+    margin-bottom:0;
+    
+}
+
+
 /* background images */
 
 .bg-bed{
@@ -212,7 +248,8 @@ textarea:focus{
 
 .show-xs,
 .show-sm,
-.show-md{
+.show-md,
+.mobile-menu{
     display:none;
 }
 
@@ -253,10 +290,10 @@ textarea:focus{
     body{border:2px solid blueviolet;}
 
 
-    
+    .show-sm{display:block;}
     .hide-sm{display:none;}
 
-    .sm-text-center{text-align: center;}
+    /* .sm-text-center{text-align: center;} */
     .sm-text-left{text-align: left;}
     .sm-text-right{text-align: right;}
 
