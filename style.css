@@ -16,12 +16,26 @@
     background-image:url('/images/the-sleep-co-1.jpg');
     background-size:cover;
     background-repeat:no-repeat;
-    min-height:10rem;
-}
+    background-color:rgb(240,240,240);
+    background-position:center;
+    }
 
-.landscape{padding-bottom:66%;}
-.portrait{padding-bottom:125%;}
-.square{padding-bottom:100%;}
+
+/* Utility classes for aspect ratios */
+.portrait-tall  {padding-bottom:175%;}
+.portrait       {padding-bottom:125%;}
+.square         {padding-bottom:100%;}
+.square-esp     {padding-bottom:135%;}
+.landscape      {padding-bottom:66%;}
+.landscape-wide {padding-bottom:56%;}
+
+
+/* background position utillity classes */
+.bg-pos-top     {background-position:top;}
+.bg-pos-bottom  {background-position:bottom;}
+.bg-pos-left    {background-position:left;}
+.bg-pos-right   {background-position:right;}
+
 
 /***************** THESE ARE THE UNIVERSAL STYLES AND UTILITY CLASSES ***************************************/
 
@@ -152,7 +166,7 @@ footer a{border:none;}
     position:fixed;
     top:0;
     bottom:0;
-    left:50%;
+    left:0;
     right:0;
 }
 
@@ -211,6 +225,14 @@ footer a{border:none;}
     margin-bottom:2rem;
     font-size:3rem;
 }
+
+
+/* Image GalleryStyles */
+
+    .gallery [class*='col-']{
+    padding:0.7%;
+    }
+  
 
 
 
