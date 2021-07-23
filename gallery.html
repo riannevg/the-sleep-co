@@ -4,31 +4,24 @@ gallery:
   - column-size: col-4_sm-12
     aspect-ratio: landscape-wide
     background_image: /images/the-sleep-co-3.jpg
-    title: This is the first picture
   - column-size: col-4_sm-12
     aspect-ratio: landscape-wide
     background_image: /images/the-sleep-co-2.jpg
-    title:This is another picture
   - column-size: col-4_sm-12
     aspect-ratio: landscape-wide
     background_image: /images/the-sleep-co-4.jpg
-    title: This is such a beautiful picture
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /images/the-sleep-co-3.jpg
-    title: Look at that cozy bed
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/the-sleep-co-4.jpg
-    title: I really want to go to sleep
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/the-sleep-co-2.jpg
-    title: these beds look so good
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/the-sleep-co-4.jpg
-    title: I want the mattress
 ---
 
 <!------------------------------ THIS IS THE HEADER BANNER------------------ -->
@@ -52,7 +45,7 @@ gallery:
     <div class='gallery grid-spaceBetween-center' id='lightgallery'>
 
   {% for item in page.gallery %}    
-      <a class='{{item.column-size}}' href='{{item.background_image}}' title='{{item.title}}'>
+      <a class='{{item.column-size}}' href='{{item.background_image}}'>
         <div class='bg-image {{item.aspect-ratio}}' style="background-image:url('{{item.background_image}}');"></div>
       </a>
      
