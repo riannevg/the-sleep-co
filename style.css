@@ -43,6 +43,7 @@
 .padded     {padding:5%;}
 .padded-sm  {padding:1rem;}
 .padded-lg  {padding:10%}
+.padded-left{padding-left:5%;}
 
 .bg-dark{
     background-color:#192B37;
@@ -232,8 +233,21 @@ footer a{border:none;}
     padding:0.7%;
     }
   
+.gallery a{
+    border-bottom:0px;
+}
+
+/* This is for the background color of the gallery popup */
+.lg-backdrop{
+    background-color:rgb(220,220,220);
+}
 
 
+.lg-sub-html{
+    background-color:black;
+    font-size:1rem;
+}
+    
 
 /* Buttons and forms */
 input, textarea{

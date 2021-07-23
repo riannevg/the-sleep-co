@@ -16,3 +16,23 @@ $( document ).ready(function() {
       });
 
 });
+
+
+
+// THis is for our pop up image gallery
+
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+    
+});
+
+
+
+// THis is for our pop up image gallery BUTTON
+
+lightGallery(document.getElementById('lightgallery-2'), {
+    speed: 500,
+    download: false
+    
+});
