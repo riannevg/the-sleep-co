@@ -1,0 +1,18 @@
+
+
+_select_data:
+  aspect-ratios:
+    - square
+    - portrait
+    - portrait-tall
+    - landscape
+    - landscape-wide
+
+  column-sizes:
+    col-6: Half page
+    col-12: Full Width
+    col-4: One Third
+    col-3: One Fourth
+    col-6_sm-12: Half page / Full width mobile
+    col-4_sm-12: One Third / Full width mobile
+    col-3_sm-6: One quarter / Half Page mobile
