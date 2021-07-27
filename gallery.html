@@ -57,15 +57,13 @@ gallery:
     <div class='gallery grid-spaceBetween-center' id='lightgallery'>
 
   {% for item in page.gallery %}    
-  {% if item.type == 'cat' %}
+ 
 
-      <a class='{{item.column-size}}' href='{{
-        
-      }}'>
+      <a class='{{item.column-size}}' href='#'>
         <div class='bg-image {{item.aspect-ratio}}' style="background-image:url('{{item.background_image}}');"></div>
       </a>
 
-  {% endif %}
+ 
   {% endfor %}
 
     </div>
@@ -115,4 +113,5 @@ gallery:
 
 
 
-
+<!------------------------------ THIS IS THE TESTIMONIAL SECTION------------------ -->
+{% include testimonial.html %}
